@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
+    "nprogress": "^0.2.0",
     "prismjs": "^1.23.0",
     "saber": "latest",
     "saber-plugin-code-copy": "^0.3.2",
