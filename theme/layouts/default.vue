@@ -5,10 +5,10 @@
 
       <slot name="default"></slot>
 
-      <h2
+      <!-- <h2
         class="post-list-heading"
         v-if="page.posts && page.posts.length > 0"
-      >{{ page.listTitle || 'Posts' }}</h2>
+      >{{ page.listTitle || 'Posts' }}</h2> -->
 
       <ul class="post-list" v-if="page.posts && page.posts.length > 0">
         <li v-for="post in page.posts" :key="post.permalink">

@@ -36,7 +36,7 @@ export default {
 
   beforeDestroy() {
     if (this.$commentScript) {
-      this.$commentScript.parentNode.removeChild(this.$commentScript)
+      this.$commentScript.parentNode?.removeChild(this.$commentScript)
     }
   }
 
@@ -47,6 +47,6 @@ export default {
 .comments {
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px dashed var(--border-color);
+  border-top: 1px dashed hsla(0,0%,100%,0.25);
 }
 </style>

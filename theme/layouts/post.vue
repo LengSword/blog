@@ -4,11 +4,16 @@
       <header class="post-header">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
         <p class="post-meta">
-          <time
+          Created on <time
             class="dt-published"
             :datetime="page.createdAt"
             itemprop="datePublished"
-          >{{ formatDate(page.createdAt) }}</time>
+          >{{ formatDate(page.createdAt) }}</time> |
+          Recently updated on <time
+            class="dt-updated"
+            :datetime="page.updatedAt"
+            itemprop="dateUpdated"
+          >{{ formatDate(page.updatedAt) }}</time>
         </p>
       </header>
 

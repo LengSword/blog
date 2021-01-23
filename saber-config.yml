@@ -1,5 +1,9 @@
 theme: ./theme
 
+markdown:
+  headings:
+    permalink: true
+
 siteConfig:
   title: LengSword
   url: https://ylsword-cheat.top
@@ -10,6 +14,8 @@ themeConfig:
   nav:
     - text: Home
       link: /
+    - text: Friends
+      link: /friends.html
     - text: About
       link: /about.html
   social:
@@ -21,6 +27,12 @@ themeConfig:
 
 plugins:
   - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-prismjs
+  - resolve: saber-plugin-code-copy
+    options:
+      buttonStyle:
+        border: none
+  - resolve: saber-plugin-git-modification-time
   # - resolve: saber-plugin-feed
   #   options:
   #     atomFeed: false

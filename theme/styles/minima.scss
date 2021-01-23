@@ -2,15 +2,13 @@
 
 // Define defaults for each variable.
 
-$base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-'Helvetica Neue', Arial, 'Microsoft YaHei New', 'Microsoft Yahei',
-'微软雅黑', 宋体, SimSun, STXihei, '华文细黑', sans-serif !default;
+$base-font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     20px !default;
 
 $text-color:       #d2d6dc !default;
 $background-color: #191c20 !default;
@@ -21,6 +19,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 $orange-color:     #f66a0a !default;
 $purple-color:     #9254de !default;
+$purple-color-dark: #531dab !default;
 $table-text-align: left !default;
 
 // Width of the content area
@@ -54,5 +53,6 @@ $on-large:         $on-laptop !default;
 // Import partials.
 @import
   "base",
-  "layout"
+  "layout",
+  "highlighter"
 ;
