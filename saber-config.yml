@@ -1,0 +1,26 @@
+theme: ./theme
+
+siteConfig:
+  title: LengSword
+  url: https://ylsword-cheat.top
+  author: LengSword
+  email: LengSword@gmail.com
+
+themeConfig:
+  nav:
+    - text: Home
+      link: /
+    - text: About
+      link: /about.html
+  social:
+    github: LengSword
+    rss: false
+  utterances:
+    repo: LengSword/blog
+    theme: icy-dark
+
+plugins:
+  - resolve: saber-plugin-query-posts
+  # - resolve: saber-plugin-feed
+  #   options:
+  #     atomFeed: false
