@@ -4,6 +4,11 @@ markdown:
   headings:
     permalink: true
 
+permalinks:
+  page: /:slug.html
+  post: /:slug.html
+
+
 siteConfig:
   title: LengSword
   url: https://ylsword-cheat.top
@@ -19,7 +24,6 @@ themeConfig:
     - text: About
       link: /about.html
   social:
-    github: LengSword
     rss: false
   utterances:
     repo: LengSword/blog
