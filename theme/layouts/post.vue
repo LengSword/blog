@@ -21,6 +21,24 @@
         <slot name="default"/>
       </div>
 
+      <div
+        class="pagination"
+        v-if="page.prevPost || page.nextPost"
+      >
+        <saber-link
+          class="prev-link"
+          :to="page.prevPost.permalink"
+          :title="`Older Post: ${page.prevPost.title}`"
+          v-if="page.prevPost"
+        >&LeftArrow; {{ page.prevPost.title }}</saber-link>
+        <saber-link
+          class="next-link"
+          :to="page.nextPost.permalink"
+          :title="`Newer Post: ${page.nextPost.title}`"
+          v-if="page.nextPost"
+        >{{ page.nextPost.title }} &RightArrow;</saber-link>
+      </div>
+
       <Utterances
         v-if="page.comments !== false && $themeConfig.utterances"
         :repo="$themeConfig.utterances.repo"
