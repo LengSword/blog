@@ -125,6 +125,7 @@
  }
 
  a.header-anchor {
+   font-size: .85em;
    float: left;
    margin-left: -.87em;
    padding-right: .23em;
@@ -142,7 +143,7 @@
   */
  blockquote {
    color: $grey-color;
-   border-left: 4px solid $purple-color-dark;
+   border-left: 4px solid $purple-color-light;
    padding-left: $spacing-unit / 2;
    @include relative-font-size(1);
   //  letter-spacing: -1px;
@@ -166,29 +167,24 @@
 //    background-color: #000;
 //  }
 
- code[class*="language-"], pre[class*="language-"] {
-   color: white;
-   text-shadow: none;
- }
+//  code[class*="language-"], pre[class*="language-"] {
+//    color: white;
+//    text-shadow: none;
+//  }
 
- .post-content .saber-highlight {
-  background-color: #000;
- }
+//  .post-content .saber-highlight {
+//   background-color: #000;
+//  }
 
- :not(pre) > code {
-  background-color: #1a3d77;
-  border-radius: .25rem;
-  font-size: .875rem;
-  padding: 1px 2px;
- }
+  :not(pre) > code {
+    background-color: $purple-color-dark;
+    border-radius: .25rem;
+    padding: 1px 2px;
+  }
 
- .post-content code {
-   font-family: Jetbrains Mono,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Microsoft Yahei,monospace;
- }
-
- .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
-   background-color: #000;
- }
+//  .post-content code {
+//    font-family: Jetbrains Mono,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Microsoft Yahei,monospace;
+//  }
 
 //  pre {
 //    padding: 8px 12px;

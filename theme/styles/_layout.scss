@@ -124,15 +124,31 @@
 /**
  * pagination
  */
+
+.prev-link {
+  float: left;
+}
+.next-link {
+  float: right;
+}
+
 .pagination {
-  margin-bottom: 25px;
-  font-size: .875rem;
+  display: inline-block;
+  width: 100%;
+  font-size: $small-font-size;
 
   .next-link, .prev-link {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-color;
     padding: 5px 10px;
     color: $text-color;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: #dddddd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
   }
+
 }
 
 
