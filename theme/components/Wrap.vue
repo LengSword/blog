@@ -6,19 +6,19 @@
         <slot></slot>
       </div>
     </main>
-    <Footer :siteTitle="siteTitle"/>
+    <!-- <Footer :siteTitle="siteTitle"/> -->
   </div>
 </template>
 
 <script>
 import variables from 'saber/variables'
 import Header from './Header.vue'
-import Footer from './Footer.vue'
+// import Footer from './Footer.vue'
 
 export default {
   components: {
     Header,
-    Footer
+    // Footer
   },
 
   props: ['page'],
@@ -61,7 +61,7 @@ export default {
 
   computed: {
     siteTitle() {
-      return this.$siteConfig.title || 'Your Awesome Title'
+      return this.$siteConfig.title || 'LengSword'
     }
   }
 }
