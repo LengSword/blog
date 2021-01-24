@@ -22,28 +22,6 @@
         </li>
       </ul>
 
-      <div
-        class="pagination"
-        v-if="page.pagination && (page.pagination.hasNext || page.pagination.hasPrev)"
-      >
-        <router-link
-          class="prev-link"
-          :to="page.pagination.prevLink"
-          v-if="page.pagination.hasPrev"
-        >← Previous</router-link>
-        <router-link
-          class="next-link"
-          :to="page.pagination.nextLink"
-          v-if="page.pagination.hasNext"
-        >Next →</router-link>
-      </div>
-
-      <p class="feed-subscribe" v-if="feedLink">
-        <svg class="svg-icon orange">
-          <use :xlink:href="getSvg('rss')"></use>
-        </svg>
-        <a :href="feedLink">Subscribe</a>
-      </p>
     </div>
   </Wrap>
 </template>
@@ -51,7 +29,6 @@
 <script>
 import formatDate from '../utils/formatDate'
 import Wrap from '../components/Wrap.vue'
-import getSvg from '../utils/getSvg'
 
 export default {
   components: {
@@ -68,7 +45,6 @@ export default {
 
   methods: {
     formatDate,
-    getSvg
   }
 }
 </script>
