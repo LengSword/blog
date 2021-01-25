@@ -19,6 +19,7 @@
               :to="post.permalink"
             >{{ post.title }}</saber-link>
           </h3>
+          <div class="post-excerpt" v-html="post.excerpt"></div>
         </li>
       </ul>
 
