@@ -4,9 +4,7 @@ layout: post
 date: 2019-07-15
 ---
 
-> 以下工具环境均以Win10系统下为准
->
-> 最近更新: 2019/10/27
+> 以下工具环境默认均在Win10系统环境下
 
 ## 1. 开发相关类
 
@@ -14,7 +12,7 @@ date: 2019-07-15
 >
 >  ​	Visual Studio: VS
 >
->  ​	Visual Studio Code: VSC
+>  ​	Visual Studio Code: VSCode
 >
 >  ​	IntelliJ IDEA: IDEA
 >
@@ -28,20 +26,20 @@ date: 2019-07-15
 >
 >  **Tips**: 其项目方案的先后顺序代表实用推荐优先度,即:越排前面的方案越推荐采用.比如**PHP**的轻量化选择,最推荐使用前者(VSC),但是如果只是用来写几个小程序,可以选择后者(ST3)
 
-- **C/C++**: VSC or ST3 (项目大就用VS,只装**C/C++**的支持并不会占用太多硬盘空间)
-- **C#**: VSC (简单的程序推荐使用VSC代替.如果项目较大或写桌面开发,最好使用VS,支持更为全面和完善)
-- ***Docker**: VSC
-- **Java**: IDEA or VSC (强烈推荐使用IDEA! VSC更多的用来刷题或做小玩具)
-- **Python**: VSC or ST3 (推荐使用VSC. ST3可以用但是更多的仅适用于简单的脚本)
-- **HTML/CSS**: VSC or ST3
-- **JavaScript/TypeScript**: VSC
-- **PHP**: VSC or ST3
-- **Go**: *LIDE or VSC (我的建议是可以**尝试**用IDE,前者是一个国人开发的Go IDE)
-- ***Rust**: VSC
-- ***Ruby**: VSC
-- **Lua**: VSC or ST3 (同时推荐IDEA.IDEA也有**Lua**插件支持)
-- **PowerShell**: PSISE or VSC
-- **SQL**: ST3 or VSC (同上者)
+- **C/C++**: VS or VSCode or ST3 (项目大就用VS,只装**C/C++**的支持并不会占用太多硬盘空间)
+- **C#**: VS or VSCode (简单的程序可以使用VSCode代替.如果项目较大或写桌面开发,最好使用VS,支持更为全面和完善)
+- ***Docker**: VSCode
+- **Java**: IDEA or VSC
+- **Python**: VSCode or ST3
+- **HTML/CSS**: VSCode
+- **JavaScript/TypeScript**: VSCode
+- **PHP**: VSCode
+- **Go**: *LiteIDE or VSCode (我的建议是可以尝试用IDE,前者是一个国人开发的Go IDE)
+- ***Rust**: VSCode
+- ***Ruby**: VSCode
+- **Lua**: VSCode or IDEA(安装 `Lua` 插件支持)
+- **PowerShell**: PSISE or ST3 or VSCode
+- **SQL**: DataGrip
 
 ### 1.1. 总结
 
@@ -65,7 +63,8 @@ date: 2019-07-15
 - **内存清理/占用监视**: Mem Reduct
 - **文件下载**: Free Download Manager
 - **文件对比/同步**: FreeFileSync
-- **终端模拟器(SSH/VNC/FTP/SFTP...)**: Termius and MobaXterm
+- **终端模拟器(SSH/VNC...)**: Termius and MobaXterm
+- **SFTP客户端(FTP/SFTP/SCP/WebDav)**: WinSCP
 - **虚拟化解决方案**: VMware Workstation Pro(已不使用)
 - **数据库管理**: DataGrip
 - **十六进制编辑**: 010 Editor
