@@ -1,3 +1,0 @@
-# blog
-
-Just my blog
